@@ -1,19 +1,112 @@
+body{
+  font-family: 'Bree Serif', serif;
+}
 
+.Load{
+  animation: slide 2s;
+}
+.Slider{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: slide 40s infinite;
+}
+.content{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.5); 
+}
+.Principal{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.Principal h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.Principal p{
+  font-size: 20px;
+}
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: #fff;
 }
 
 p {
   line-height: 2rem;
 }
 
+@keyframes slide{
+  0%{
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+  }
+  20.01%{
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+  }
+  40%{
+    background-image: url('../img/fondo3.jpg');
+    background-size: cover;
+  }
+  40.01%{
+    background-image: url('../img/fondo4.jpg');
+    background-size: cover;
+}
+  60%{
+    background-image: url('../img/fondo5.jpg');
+    background-size: cover;
+  }
+
+  60.01%{
+    background-image: url('../img/logo.jpg');
+    background-size: cover;
+  }
+
+  80%{
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+  }
+  80.01%{
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+  }
+
+  80.01%{
+    background-image: url('../img/fondo3.jpg');
+    background-size: cover;
+  }
+  100%{
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+  }
+}
+
+#scrollUp {
+  bottom: 20px;
+  left: 20px;
+  background: url('../img/up.png');
+  background-size:cover;
+  height: 50px;
+  width: 50px; 
+  border-radius: 25px;
+ 
+}
+
+
 .sidenav-trigger {
-  color:#26a69a;
+  color:#fff;
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 650px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -21,7 +114,6 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -29,6 +121,7 @@ p {
   }
   #index-banner .section {
     top: 10%;
+    w
   }
 }
 
@@ -49,4 +142,11 @@ footer.page-footer {
   margin: 0;
 }
 
+.input-field label{
+  color: #000;
+}
 
+.color{
+  color: #000;
+  font-size:20px; 
+}
